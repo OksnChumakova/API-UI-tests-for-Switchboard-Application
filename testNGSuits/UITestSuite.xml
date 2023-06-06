@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UI Tests" verbose="2" annotations="JDK">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="Submit New Page Tests"  parallel="none" thread-count="1" enabled="true">
+        <classes>
+            <class name="ui.tests.SubmitNewPageTest" />
+        </classes>
+    </test>
+    <test name="Pending Approval Page Test"  parallel="none" thread-count="1" enabled="true">
+        <classes>
+            <class name="ui.tests.PendingApprovalPageTest" />
+        </classes>
+    </test>
+    <test name="Published Page Test"  parallel="none" thread-count="1" enabled="true">
+        <classes>
+            <class name="ui.tests.PublishedPageTest" />
+        </classes>
+    </test>
+    <test name="Pending Rejection Page Test"  parallel="none" thread-count="1" enabled="true">
+        <classes>
+            <class name="ui.tests.PendingRejectionPageTest" />
+        </classes>
+    </test>
+    <test name="Import Page Test"  parallel="none" thread-count="1" enabled="true">
+        <classes>
+            <class name="ui.tests.ImportPageTest" />
+        </classes>
+    </test>
+    <test name="Login Page Test"  parallel="none" thread-count="1" enabled="true">
+        <classes>
+            <class name="ui.tests.LoginPageTest" />
+        </classes>
+    </test>
+
+</suite>
